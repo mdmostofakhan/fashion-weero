@@ -1,4 +1,5 @@
 import React from "react";
+import ProductTable from "./Table/ProductTable";
 
 
 
@@ -24,7 +25,9 @@ const Products = () => {
           <p className="text-2xl font-semibold">৳ 75.9k</p>
         </div>
       </div>
-     
+     <div className="mt-8">
+     <ProductTable></ProductTable>
+     </div>
     </div>
   );
 };
