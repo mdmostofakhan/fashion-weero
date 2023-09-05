@@ -1,16 +1,12 @@
 import React from "react";
+import { Icon } from '@iconify/react';
 import {
   BarChart,
   Bar,
-  Cell,
   XAxis,
   YAxis,
-  CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
-  LineChart,
-  Line,
 } from "recharts";
 
 const ReChart = () => {
@@ -54,10 +50,12 @@ const ReChart = () => {
   return (
     <div className="border border-green-600 rounded-2xl mt-12 w-[650px] h-[370px]">
            <div className="flex justify-between mx-12 mt-4">
-           <p>Claims Over the Years</p>
+           <p className="text-2xl font-semibold">Claims Over the Years</p>
            <div>
-              <p>Total Sales</p>
-              <p>Total Income</p>
+              <p className="text-[#5041BC] flex gap-2 text-xl font-semibold items-center">
+              <Icon icon="icon-park-outline:dot" />  Total Sales</p>
+              <p className="text-[#EA8F95] flex gap-2 text-xl font-semibold items-center">
+              <Icon icon="icon-park-outline:dot" />  Total Income</p>
            </div>
        </div>
        <BarChart

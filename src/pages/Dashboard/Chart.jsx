@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from '@iconify/react';
 import {
   BarChart,
   Bar,
@@ -59,8 +60,10 @@ const Chart = () => {
        <div className="flex justify-between mx-12 mt-4">
            <p className="text-2xl font-semibold">Monthly </p>
            <div>
-              <p className="text-[#5041BC]">Total Sales</p>
-              <p className="text-[#EA8F95]">Total Income</p>
+              <p className="text-[#5041BC] flex gap-2 text-xl font-semibold items-center">
+              <Icon icon="icon-park-outline:dot" /> Total Sales</p>
+              <p className="text-[#EA8F95] flex gap-2 text-xl font-semibold items-center "> 
+              <Icon icon="icon-park-outline:dot" /> Total Income</p>
            </div>
        </div>
       <BarChart
