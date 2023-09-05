@@ -25,12 +25,8 @@ const Orders = () => {
         </div>
       </div>
       <div className=' mt-8 '>
-
       <OrderTable></OrderTable>
       </div>
-
-      
-
     </div>
   );
 };
