@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 const Products = () => {
   return (
     <div>
@@ -22,6 +24,7 @@ const Products = () => {
           <p className="text-2xl font-semibold">৳ 75.9k</p>
         </div>
       </div>
+     
     </div>
   );
 };

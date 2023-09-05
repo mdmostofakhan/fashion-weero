@@ -4,7 +4,7 @@ import { NavLink, Link, Outlet } from "react-router-dom";
 
 const Dashboard = () => {
   return (
-    <div className="container mt-8 flex w-full  gap-12">
+    <div className="container mt-8 flex   gap-12">
       <div className="bg-[#0C4E67] ">
         <div className="flex justify-center items-center my-10">
           <Link to="/" className="">

@@ -1,4 +1,6 @@
 import React from "react";
+import OrderTable from "./Table/OrderTable";
+
 
 const Orders = () => {
   return (
@@ -22,6 +24,13 @@ const Orders = () => {
           <p className="text-2xl font-semibold">৳ 75.9k</p>
         </div>
       </div>
+      <div className=' mt-8 '>
+
+      <OrderTable></OrderTable>
+      </div>
+
+      
+
     </div>
   );
 };
