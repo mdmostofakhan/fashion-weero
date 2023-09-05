@@ -27,6 +27,12 @@
     padding-bottom: 8px;
 }
 
+.nabLinkStyle li .active{
+    color: white;
+    border: none;
+    background-color: #3A97B0;
+}
+
 /* banner swipper indicator */
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
 

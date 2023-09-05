@@ -56,7 +56,7 @@ const Chart = () => {
   ];
 
   return (
-    <div className="border border-green-600 rounded-2xl mt-12 w-[650px] h-[370px]">
+    <div className="border border-green-600 rounded-2xl h-[370px]">
        <div className="flex justify-between mx-12 mt-4">
            <p className="text-2xl font-semibold">Monthly </p>
            <div>

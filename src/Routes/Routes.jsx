@@ -144,10 +144,6 @@ const router = createBrowserRouter([
       {
         path: "/dashboard/faq",
         element: <Faq></Faq>
-      },
-      {
-        path: "/dashboard/logout",
-        element: <LogOut></LogOut>
       }
     ],
   },
