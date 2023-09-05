@@ -1,25 +1,24 @@
 import React from "react";
-import { Icon } from '@iconify/react';
+import { Icon } from "@iconify/react";
 
 const AddProducts = () => {
   return (
     <div>
       <h1 className="text-2xl font-semibold mb-6">Add Products</h1>
       <div className="flex gap-8">
-
-       <div>
-       <div className="">
-          <label className="font-semibold">Product Name</label> <br />
-          <input
-            className="border w-[560px] border-purple-200 mt-3 p-3 "
-            type="text"
-            name=""
-            placeholder="Core i7 5th gen Leptop"
-            id=""
-          />
-        </div> 
-       <div className="flex gap-6 mt-6">
-       <div>
+        <div>
+          <div className="">
+            <label className="font-semibold">Product Name</label> <br />
+            <input
+              className="border w-[560px] border-purple-200 mt-3 p-3 "
+              type="text"
+              name=""
+              placeholder="Core i7 5th gen Leptop"
+              id=""
+            />
+          </div>
+          <div className="flex gap-6 mt-6">
+            <div>
               <label className="font-semibold">Product SKU</label> <br />
               <input
                 className="border w-[270px]  border-purple-200 p-3 mt-3"
@@ -39,10 +38,11 @@ const AddProducts = () => {
                 id=""
               />
             </div>
-       </div>
-       <div className="flex gap-6 mt-6">
-       <div>
-              <label className="font-semibold">Product  Regular Price</label> <br />
+          </div>
+          <div className="flex gap-6 mt-6">
+            <div>
+              <label className="font-semibold">Product Regular Price</label>{" "}
+              <br />
               <input
                 className="border text-center w-[270px] border-purple-200 p-3 mt-3"
                 type="text"
@@ -52,7 +52,8 @@ const AddProducts = () => {
               />
             </div>
             <div>
-              <label className="font-semibold">Discount Percentage</label> <br />
+              <label className="font-semibold">Discount Percentage</label>{" "}
+              <br />
               <input
                 className="border text-center w-[270px] border-purple-200 p-3 mt-3"
                 type="text"
@@ -61,9 +62,9 @@ const AddProducts = () => {
                 id=""
               />
             </div>
-       </div>
-       <div className="flex gap-6 mt-6">
-       <div>
+          </div>
+          <div className="flex gap-6 mt-6">
+            <div>
               <label className="font-semibold">Free Delivery</label> <br />
               <input
                 className="border text-center w-[270px] border-purple-200 bg-gray-700 text-white p-3 mt-3"
@@ -83,36 +84,36 @@ const AddProducts = () => {
                 id=""
               />
             </div>
-       </div>
+          </div>
 
-       <div className="mt-6">
-          <label className="font-semibold">Mega Offer Name</label> <br />
-          <input
-            className="border justify-between border-purple-200 w-[560px]  mt-2 p-3 "
-            type="text"
-            name=""
-            placeholder="Eid Festival Mega offer   "
-            id=""
-          />
-        </div>
+          <div className="mt-6">
+            <label className="font-semibold">Mega Offer Name</label> <br />
+            <input
+              className="border justify-between border-purple-200 w-[560px]  mt-2 p-3 "
+              type="text"
+              name=""
+              placeholder="Eid Festival Mega offer   "
+              id=""
+            />
+          </div>
 
-            <div className="mt-6">
+          <div className="mt-6">
             <label className="font-semibold mb-3">Paid Delivery</label> <br />
             <thead>
-          <tr>
-            <th className="border border-green-600 py-3">Size</th>
-            <th className="border border-green-600 py-3">Chest</th>
-            <th className="border border-green-600 py-3">Waist              </th>
-            <th className="border border-green-600 py-3">Waist
-            <Icon icon="streamline:interface-add-2-remove-bold-cross-buttons-button-add-plus" /></th>
-        
-          </tr>
-        </thead>
-            </div>
-       </div>
+              <tr>
+                <th className="border border-green-600 py-3">Size</th>
+                <th className="border border-green-600 py-3">Chest</th>
+                <th className="border border-green-600 py-3">Waist </th>
+                <th className="border border-green-600 py-3">
+                  Waist
+                  <Icon icon="streamline:interface-add-2-remove-bold-cross-buttons-button-add-plus" />
+                </th>
+              </tr>
+            </thead>
+          </div>
+        </div>
 
-
-      {/* secon ............ */}
+        {/* secon ............ */}
         <div>
           <div className="flex gap-6">
             <div>
@@ -126,7 +127,7 @@ const AddProducts = () => {
               />
             </div>
             <div>
-              <label className=" font-semibold">Product Brand   </label> <br />
+              <label className=" font-semibold">Product Brand </label> <br />
               <input
                 className="border border-purple-200 w-[270px] p-3 mt-3"
                 type="text"
@@ -148,7 +149,8 @@ const AddProducts = () => {
               />
             </div>
             <div>
-              <label className="font-semibold">Product Sub Category</label> <br />
+              <label className="font-semibold">Product Sub Category</label>{" "}
+              <br />
               <input
                 className="border border-purple-200 w-[270px] p-3 mt-3"
                 type="text"
@@ -170,7 +172,8 @@ const AddProducts = () => {
               />
             </div>
             <div>
-              <label className=" font-semibold">New Discount Price</label> <br /> 
+              <label className=" font-semibold">New Discount Price</label>{" "}
+              <br />
               <input
                 className="border border-purple-200 w-[270px] p-3 mt-3"
                 type="text"
@@ -226,17 +229,29 @@ const AddProducts = () => {
           </div>
 
           <div className="mt-6">
-          <label className=" font-semibold">Product Name</label> <br />
-          <input
-            className="border border-purple-200 justify-between w-[560px]  mt-2 p-3 "
-            type="text"
-            name=""
-            placeholder="icon"
-            id=""
-          />
+            <label className=" font-semibold">Product Name</label> <br />
+            <input
+              className="border border-purple-200 justify-between w-[560px]  mt-2 p-3 "
+              type="text"
+              name=""
+              placeholder="icon"
+              id=""
+            />
+          </div>
         </div>
-
-        </div>
+      </div>
+      <div className="mt-6">
+        <label className=" font-semibold">Product Name</label> <br />
+        <input
+          className="border border-purple-200  w-full h-[140px] mt-2 p-3 "
+          type="text"
+          name="message"
+          placeholder=""
+          id=""
+        />
+      </div>
+      <div className="text-end  mt-4 ">
+        <button className=" bg-[#282B35] p-2 w-28 text-[#F5F5F5]">Submit</button>
       </div>
     </div>
   );
