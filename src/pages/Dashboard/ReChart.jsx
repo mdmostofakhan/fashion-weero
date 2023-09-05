@@ -13,57 +13,54 @@ import {
   Line,
 } from "recharts";
 
-const Chart = () => {
+const ReChart = () => {
   const data = [
     {
-      name: "Jan",
-      
+      name: "2015",
       pv: 0,
       amt: 5,
     },
     {
-      name: "Feb",
-      
+      name: "2016 ",
       pv: 0,
       amt: 4,
     },
     {
-      name: "Mar",
+      name: "2017",
       uv: 2000,
       pv: 0,
       amt: 3,
     },
     {
-      name: "April",
+      name: "2018",
       uv: 2780,
       pv: 0,
       amt: 2,
     },
     {
-      name: "May ",
+      name: "2019",
       uv: 1890,
       pv: 0,
       amt: 2.5,
     },
     {
-      name: "Jun",
+      name: "2020",
       uv: 2390,
       pv: 0,
       amt: 3,
     },
-
   ];
 
   return (
     <div className="border border-green-600 rounded-2xl mt-12 w-[650px] h-[370px]">
-       <div className="flex justify-between mx-12 mt-4">
-           <p className="text-2xl font-semibold">Monthly </p>
+           <div className="flex justify-between mx-12 mt-4">
+           <p>Claims Over the Years</p>
            <div>
-              <p className="text-[#5041BC]">Total Sales</p>
-              <p className="text-[#EA8F95]">Total Income</p>
+              <p>Total Sales</p>
+              <p>Total Income</p>
            </div>
        </div>
-      <BarChart
+       <BarChart
         width={500}
         height={300}
         data={data}
@@ -84,4 +81,4 @@ const Chart = () => {
   );
 };
 
-export default Chart;
+export default ReChart;
