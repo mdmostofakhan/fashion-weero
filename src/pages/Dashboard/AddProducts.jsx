@@ -5,9 +5,9 @@ const AddProducts = () => {
   return (
     <div className="w-11/12 mx-auto">
       <h1 className="text-2xl font-semibold my-6">Add Products</h1>
-      <div className="flex gap-8">
-        <div>
-          <div className="">
+      <div className="flex w-full gap-8">
+      <div className="w-full">
+          <div className="w-full">
             <label className="font-semibold">Product Name</label> <br />
             <input
               className="border w-full border-purple-200 mt-3 p-3 "
@@ -97,24 +97,44 @@ const AddProducts = () => {
             />
           </div>
 
-          <div className="mt-6">
-            <label className="font-semibold mb-3">Paid Delivery</label> <br />
-            <table className="border w-full">
+          <div className="mt-6 relative">
+            <label className="font-semibold ">Create Size Guide</label> <br />
+            <table className="border w-full mt-2">
               <tr className="flex">
-                <input  type="text" placeholder="name"  className="border border-green-600 py-3" />
-                <input type="text" placeholder="name"  className="border border-green-600 py-3" />
-                <input type="text" placeholder="name"  className="border border-green-600 py-3" />
-                <input type="text" placeholder="name"  className="border border-green-600 py-3" />
               
+                <input
+                  type="text"
+                  placeholder="Size"
+                  className="border  border-purple-200 p-3"
+                />
+                <input
+                  type="text"
+                  placeholder="Chest"
+                  className="border  border-purple-200 p-3"
+                />
+                <input
+                  type="text"
+                  placeholder="Waist"
+                  className="border  border-purple-200 p-3"
+                />
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Waist"
+                    className="border   border-purple-200  p-3"
+                  />
+                  <div className="absolute right-5 top-8 cursor-pointer">
+                    <Icon className=" text-5xl" icon="ph:plus-fill" />
+                  </div>
+                </td>
               </tr>
-         
             </table>
           </div>
         </div>
 
         {/* secon ............ */}
-        <div>                         
-          <div className="flex w-full gap-6">
+        <div className="w-full">
+          <div className="flex  gap-6">
             <div className="w-1/2">
               <label className=" font-semibold">Product Image</label> <br />
               <input
@@ -135,7 +155,6 @@ const AddProducts = () => {
                 id=""
               />
             </div>
-
           </div>
           <div className="flex w-full gap-6 mt-6">
             <div className="w-1/2">
@@ -160,22 +179,22 @@ const AddProducts = () => {
               />
             </div>
           </div>
-          <div className="flex gap-6 mt-6">
-            <div>
+          <div className="flex w-full gap-6 mt-6">
+            <div className="w-1/2">
               <label className=" font-semibold">Discount Amount</label> <br />
               <input
-                className="border border-purple-200 p-3 mt-3"
+                className="border w-full border-purple-200 p-3 mt-3"
                 type="text"
                 name=""
                 placeholder="125 ৳"
                 id=""
               />
             </div>
-            <div>
+            <div className="w-1/2">
               <label className=" font-semibold">New Discount Price</label>{" "}
               <br />
               <input
-                className="border border-purple-200 p-3 mt-3"
+                className="border w-full border-purple-200 p-3 mt-3"
                 type="text"
                 name=""
                 placeholder="1125 ৳"
@@ -183,21 +202,21 @@ const AddProducts = () => {
               />
             </div>
           </div>
-          <div className="flex gap-6 mt-6">
-            <div>
+          <div className="flex w-full gap-6 mt-6">
+            <div className="w-1/2">
               <label className=" font-semibold">Inside Area </label> <br />
               <input
-                className="border border-purple-200 p-3 mt-3"
+                className="border w-full border-purple-200 p-3 mt-3"
                 type="text"
                 name=""
                 placeholder="60 ৳ "
                 id=""
               />
             </div>
-            <div>
+            <div className="w-1/2">
               <label className=" font-semibold">Out Side Area</label> <br />
               <input
-                className="border border-purple-200 p-3 mt-3"
+                className="border w-full border-purple-200 p-3 mt-3"
                 type="text"
                 name=""
                 placeholder="100 ৳ "
@@ -205,21 +224,21 @@ const AddProducts = () => {
               />
             </div>
           </div>
-          <div className="flex gap-6 mt-6">
-            <div>
+          <div className="flex w-full gap-6 mt-6">
+            <div className="w-1/2">
               <label className=" font-semibold">Start Date</label> <br />
               <input
-                className="border border-purple-200 p-3 mt-3"
+                className="border w-full border-purple-200 p-3 mt-2"
                 type="text"
                 name=""
                 placeholder="12.00 am 29 July 2023  "
                 id=""
               />
             </div>
-            <div>
+            <div className="w-1/2">
               <label className=" font-semibold">Ending Date</label> <br />
               <input
-                className="border border-purple-200 p-3 mt-3"
+                className="border w-full border-purple-200 p-3 mt-2"
                 type="text"
                 name=""
                 placeholder="12.00 am 07 Aug 2023 "
@@ -237,9 +256,9 @@ const AddProducts = () => {
               placeholder=""
               id=""
             />
-              <div className='absolute right-5 top-10 cursor-pointer'>
-                <Icon className="text-3xl text-white bg-black" icon="streamline:interface-add-2-remove-bold-cross-buttons-button-add-plus" />
-              </div>
+            <div className="absolute right-5 top-8 cursor-pointer">
+              <Icon className=" text-5xl" icon="ph:plus-fill" />
+            </div>
           </div>
         </div>
       </div>
@@ -253,12 +272,15 @@ const AddProducts = () => {
           id=""
         />
       </div>
-      
+
       <div className="text-end  mt-4 ">
-        <button className=" bg-[#282B35] p-2 w-28 text-[#F5F5F5]">Submit</button>
+        <button className=" bg-[#282B35] p-2 w-28 text-[#F5F5F5]">
+          Submit
+        </button>
       </div>
     </div>
   );
 };
 
 export default AddProducts;
+

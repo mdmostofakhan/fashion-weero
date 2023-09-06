@@ -30,11 +30,11 @@ const ProductTable = () => {
                     <td className='border border-green-600'>700,000,00৳</td>
                     <td className='border border-green-600'>650,000,00৳</td>
                     <td className='border border-green-600'>07%</td>
-                    <td className='border text-6xl border-green-600'>
-                        <Icon icon="bxs:comment-edit" />
+                    <td className='border text-5xl text-center border-green-600'>
+                    <Icon className=' inline-block bg-black text-white' icon="tabler:edit" />
                         </td>
                     <td className='border text-6xl border-green-600'>
-                        <Icon icon="material-symbols:delete" /></td>
+                        <Icon className='inline-block' icon="material-symbols:delete" /></td>
                    </tr>
                    
                    <tr>
@@ -47,14 +47,14 @@ const ProductTable = () => {
                     <td className='border border-green-600'>700,000,00৳</td>
                     <td className='border border-green-600'>650,000,00৳</td>
                     <td className='border border-green-600'>07%</td>
-                    <td className='border text-6xl border-green-600'>
-                        <Icon icon="bxs:comment-edit" />
+                    <td className='border text-5xl border-green-600'>
+                      <Icon className='inline-block bg-black text-white' icon="tabler:edit" />
                         </td>
                     <td className='border text-6xl border-green-600'>
-                        <Icon icon="material-symbols:delete" /></td>
+                        <Icon className='inline-block' icon="material-symbols:delete" /></td>
                    </tr>
 
-                   <tr>
+                   <tr className=''>
                     <td className='border border-green-600 w-[140px] p-3'>
                         <img className='w-full' src={icon1} alt="" />
                     </td>
@@ -64,10 +64,10 @@ const ProductTable = () => {
                     <td className='border border-green-600'>700,000,00৳</td>
                     <td className='border border-green-600'>650,000,00৳</td>
                     <td className='border border-green-600'>07%</td>
+                    <td className='border text-5xl border-green-600'>
+                      <Icon className='inline-block bg-black text-white' icon="tabler:edit" /></td>
                     <td className='border text-6xl border-green-600'>
-                        <Icon icon="bxs:comment-edit" /></td>
-                    <td className='border text-6xl border-green-600'>
-                        <Icon icon="material-symbols:delete" /></td>
+                        <Icon className='inline-block' icon="material-symbols:delete" /></td>
                    </tr>
                  </tbody>
             </table>
