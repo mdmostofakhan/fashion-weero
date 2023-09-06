@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 
 const AddProducts = () => {
   return (
-    <div className="w-11/12 mx-auto">
+    <div className=" w-11/12 mx-auto">
       <h1 className="text-2xl font-semibold my-6">Add Products</h1>
       <div className="flex w-full gap-8">
       <div className="w-full">
@@ -15,7 +15,8 @@ const AddProducts = () => {
               name=""
               placeholder="Core i7 5th gen Leptop"
               id=""
-            />
+            /> 
+           
           </div>
           <div className="flex w-full gap-6 mt-6">
             <div className="w-1/2">
@@ -264,13 +265,7 @@ const AddProducts = () => {
       </div>
       <div className="mt-6">
         <label className=" font-semibold">Product Name</label> <br />
-        <input
-          className="border border-purple-200  w-full h-[140px] mt-2 p-3 "
-          type="text"
-          name="message"
-          placeholder=""
-          id=""
-        />
+        <textarea className="border p-4 w-full" placeholder="message" name="most" id="" cols="30" rows="10"></textarea>
       </div>
 
       <div className="text-end  mt-4 ">
